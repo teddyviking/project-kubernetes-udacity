@@ -3,13 +3,15 @@
 
 # Assumes that an image is built via `run_docker.sh`
 
-# Step 1:
-# Create dockerpath
-# dockerpath=<your docker ID/path>
+export DOCKER_ID_USER="teddyviking"
+export REPOSITORY="kubernetes_project"
 
-# Step 2:  
-# Authenticate & tag
+dockerpath=$DOCKER_ID_USER/kubernetes_project
+
 echo "Docker ID and Image: $dockerpath"
+docker login
+docker tag $REPOSITORY $DOCKER_ID_USER/$REPOSITORY 
 
 # Step 3:
 # Push image to a docker repository
+docker push $DOCKER_ID_USER/$REPOSITORY  
