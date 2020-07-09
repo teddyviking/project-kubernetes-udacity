@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![teddyviking](https://circleci.com/gh/teddyviking/project-kubernetes-udacity.svg?style=shield)](https://github.com/teddyviking/project-kubernetes-udacity)
 
 ## Project Overview
 
