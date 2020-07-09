@@ -3,10 +3,10 @@
 
 # Assumes that an image is built via `run_docker.sh`
 
-export DOCKER_ID_USER="teddyviking"
-export REPOSITORY="kubernetes_project"
+DOCKER_ID_USER="teddyviking"
+REPOSITORY="kubernetes_project"
 
-dockerpath=$DOCKER_ID_USER/kubernetes_project
+dockerpath=$DOCKER_ID_USER/$REPOSITORY
 
 echo "Docker ID and Image: $dockerpath"
 docker login
